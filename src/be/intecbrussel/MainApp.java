@@ -96,6 +96,28 @@ public class MainApp {
         numbers.offer(1);
         System.out.println("queue update: " + numbers);
 
+        numbers.poll();
+        System.out.println("queue update after poll: " + numbers);
+
+        System.out.println("---------------------------------------");
+
+        HashMap<Integer, String> zipCodes = new HashMap<>();
+        zipCodes.put(1000, "Brussels");
+        zipCodes.put(9000, "Ghent");
+        zipCodes.put(2000, "Antwerp");
+
+        zipCodes.put(1000, "Bxl");
+
+        System.out.println(zipCodes.size());
+        System.out.println(zipCodes.get(1000));
+
+        System.out.println(zipCodes.containsKey(9000));
+        System.out.println(zipCodes.containsValue("Antwerp"));
+
+        // zipCodes.remove(1000);
+        zipCodes.remove(9000, "Ghent");
+
+        System.out.println(zipCodes);
 
 
     }
