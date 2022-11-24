@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class PostCard {
 
-    String country;
-    String continent;
+    private String country;
+    private String continent;
 
     public PostCard(String country, String continent) {
         this.country = country;
